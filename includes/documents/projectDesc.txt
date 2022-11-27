@@ -1,0 +1,21 @@
+Creating mail API with Vue and AJAX using the POST request. You’ll be sending your mail form
+data to a PHP script via Fetch and the POST request. You’ll need to handle both success and
+failure via the response object and changes to the UI (handle errors, update with visual cues,
+etc).
+
+Assignment Requirements:
+Use the build provided and update the Fetch method to reference your mail API URL.
+Validate your form content on the server side using your PHP script that you create in the Web
+class. Return a success or failure message object to your Fetch handler(s) and update your UI
+appropriately.
+Your XHTTP / Fetch function should handle the stages of an AJAX request gracefully. Give
+some feedback if the request fails or if it’s successful - there should never be any confusion as
+to what’s happened with the POST request.
+Handle failure first - what happens if you can’t connect, if the resource is missing, etc. This is UX
+/ UI - give the user some visual feedback. Use the $refs object that Vue provides - the
+references to the DOM elements / fields in the form - to mark which are missing/empty/incorrect.
+If the AJAX request is successful, add some visual cue / UX to your view - the content of the
+page.Show a brief message, reset the form, change the button to succes... something to let the
+user know their mail has been sent.
+This means you need to create and show some additional UI where appropriate. Think about
+microtransactions and UI enhancements that can guide the user through this process.
